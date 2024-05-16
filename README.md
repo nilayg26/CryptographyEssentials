@@ -1,5 +1,4 @@
 # CryptographyEssentials
-Comprehensive Cryptographic Algorithms in Java
 This repository contains a collection of implementations for various cryptographic algorithms. The repository is divided into two main sections: Symmetric Key Cryptography and Asymmetric Key Cryptography. Additionally, it includes implementations for the Digital Signature Standard (DSS) and some bonus algorithms.
 
 # Symmetric Key Cryptography

@@ -1,7 +1,18 @@
 //Author Nilay Gupta
 /*The accuracy and execution time of the code is proven only for Integers 
-less than 100. Large Integers will require High Computational 
+less than 100. Large Integers require High Computational 
 Cost and time to run*/
+/*Sample I/O:
+ * Enter Plain Text Integer (0<I<100) to be encyrpted: 
+    11
+    Global prime 1. p= 89
+    Global prime 2. q= 3
+    Public key e= 57
+    Private key d= 105
+    Phi(n)= 176
+    Cipher Text is: 146
+    Plain Text is: 11
+ */
 package GITHUB.CryptographyEssentials.AsymmetricKeyCryptography;
 import java.util.Scanner;
 import java.util.Random;

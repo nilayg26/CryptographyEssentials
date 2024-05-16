@@ -2,6 +2,16 @@
 /*The accuracy and execution time of the code is proven only for Integers 
 less than 100. Large Integers will require High Computational 
 Cost and time to run*/
+/*Sample I/O:
+ * Enter Plain Text Integer (0<I<100) to be encyrpted: 
+    11  
+    Global prime q= 59
+    Public key Ya= 15
+    Private key Xa= 41
+    Random Integer K= 20
+    Cipher Text is: [46, 18]
+    Plain Text is: 11
+ */
 package GITHUB.CryptographyEssentials.AsymmetricKeyCryptography;
 import java.util.Random;
 import java.util.Scanner;

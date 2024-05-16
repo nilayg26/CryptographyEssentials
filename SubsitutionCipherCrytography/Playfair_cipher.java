@@ -8,7 +8,6 @@ BALLOON         //Enter only one word. Sentences not allowed.
 Cipher is: IBSUPMNA
 Plain Text is: BALLOON */
 package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography; //remove this line before running the code
-import java.security.Key;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;

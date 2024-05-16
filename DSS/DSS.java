@@ -1,5 +1,5 @@
 //Author Nilay Gupta
-/*The code is just a basic demonstration of DSS.Just run the 
+/*The code is just a basic demonstration of DSS. Just run the 
 code and code will automatically generate all
 the essential variables and components.
 Sample output at the end of code.

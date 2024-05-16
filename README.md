@@ -1,20 +1,19 @@
 # CryptographyEssentials
-This repository contains a collection of implementations for various cryptographic algorithms. The repository is divided into two main sections: Substitution Cipher Cryptography and Asymmetric Key Cryptography. Additionally, it includes implementations for the Digital Signature Standard (DSS) and some bonus algorithms.
+This repository contains a collection of implementations for various cryptographic algorithms. The repository is divided into two main sections: Substitution Cipher Cryptography and Asymmetric Public Key Cryptography. Additionally, it includes implementations for the Digital Signature Standard (DSS) and some bonus algorithms.
 
-## Substitution Cipher Cryptography
+## Substitution Cipher Cryptography [Playfair Cipher](https://en.wikipedia.org/wiki/Playfair_cipher) | [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigenère_cipher) | [Shift Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
     1)Playfair Cipher 
     2)Vigenere Cipher
     3)Shift Cipher
--[WIKI](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 
-## Asymmetric Key Cryptography
-    1)RSA Cryptosystem [wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+## Asymmetric Key Cryptography [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) | [Elgamal](https://en.wikipedia.org/wiki/ElGamal_encryption)
+    1)RSA Cryptosystem 
     2)Elgamal Cryptosystem
 
-## Digital Signature Standard (DSS)
+## Digital Signature Standard [DSS](https://en.wikipedia.org/wiki/Digital_Signature_Standard)
 Implementation of DSS for authentication purposes in various protocols.
 
-## Bonus Algorithms
+## Bonus Algorithms [Primitive Roots](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) | [SHA-512](https://en.wikipedia.org/wiki/SHA-2) | [Transposition Cipher](https://en.wikipedia.org/wiki/Transposition_cipher)
     1)Finding Primitive Roots
     2)Greatest Common Divisor (GCD) using the Euclidean Algorithm
     3)Padding of SHA-512

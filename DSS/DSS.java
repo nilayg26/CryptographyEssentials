@@ -4,7 +4,8 @@ code and code will automatically generate all
 the essential variables and components.
 Sample output at the end of code.
 */
-package GITHUB.CryptographyEssentials.DSS;
+
+package GITHUB.CryptographyEssentials.DSS; //remove this line before running the code
 import java.util.Random;
 public class DSS {
     public static void main(String [] args){

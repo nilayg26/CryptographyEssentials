@@ -1,6 +1,6 @@
 //Author Nilay Gupta
 /*Sample Test Case at the end of code*/
-package GITHUB.CryptographyEssentials.BonusAlgorithms;
+package GITHUB.CryptographyEssentials.BonusAlgorithms; //remove this line before running the code
 import java.util.Scanner;
 public class PaddingSHA512 {
     public static void main(String [] args){

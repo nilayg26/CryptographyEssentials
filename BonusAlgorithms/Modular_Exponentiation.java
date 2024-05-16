@@ -1,5 +1,5 @@
-////Author Nilay Gupta
-package GITHUB.CryptographyEssentials.BonusAlgorithms;
+//Author Nilay Gupta
+package GITHUB.CryptographyEssentials.BonusAlgorithms; //remove this line before running the code
 public class Modular_Exponentiation {
     static int n=35;
     static int x=6;

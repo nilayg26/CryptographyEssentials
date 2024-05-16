@@ -8,7 +8,7 @@ Enter Key:
 Cipher: ROVVY
 Decyrption: HELLO */
 
-package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography;
+package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography; //remove this line before running the code
 import java.util.Objects;
 import java.util.Scanner;
 

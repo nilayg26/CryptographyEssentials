@@ -7,7 +7,7 @@ can all be obtained as powers of 2 modulo 5). However, 12 is not
 a prime number, so it does not necessarily have a primitive root 
 (and it doesn't in this case).
  */
-package GITHUB.CryptographyEssentials.BonusAlgorithms;
+package GITHUB.CryptographyEssentials.BonusAlgorithms; //remove this line before running the code
 import java.util.Arrays;
 import java.util.Scanner;
 public class PrimitiveRoots {

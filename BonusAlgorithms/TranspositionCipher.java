@@ -15,7 +15,7 @@
 //Cipher message: usr aiyg oias hb
 //Message recieved by reciever: gaurish is a boy*/
 //CODE:
-package GITHUB.CryptographyEssentials.BonusAlgorithms;
+package GITHUB.CryptographyEssentials.BonusAlgorithms; //remove this line before running the code
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;

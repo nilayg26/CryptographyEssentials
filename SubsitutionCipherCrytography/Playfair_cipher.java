@@ -13,21 +13,24 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 class Playfair_Encyrption {
-    int pt_size;
-    String key;
-    String Plain_Text;
-    String diag;
-    String alpha = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; // excluding J
-    int[] arr_ele1 = new int[2];
-    int[] arr_ele2 = new int[2];
-
+    private int pt_size;
+    private String key;
+    private String Plain_Text;
+    private String diag;
+    private String alpha;
+    private int[] arr_ele1;
+    private int[] arr_ele2;
+    private ArrayList<String> diagram;
+    private String[][]matrix;
     Playfair_Encyrption(String Plain_Text, String key) {
         this.Plain_Text = Plain_Text.toUpperCase();
         this.key = key.toUpperCase();
         this.pt_size = Plain_Text.length();
+        alpha = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; // excluding J
+        arr_ele1 = new int[2];
+        arr_ele2 = new int[2];
+        matrix = new String[5][5];
     }
-    ArrayList<String> diagram;
-    String[][] matrix = new String[5][5];
 
     ArrayList<String> Diagram() {   //Step 1: Creating Diagrams
         int d_space = pt_size % 2;  //Step 2: Modifying the diagrams
@@ -118,7 +121,7 @@ class Playfair_Encyrption {
         return matrix;
     }
 
-    boolean isPresent(int index) {
+    private boolean isPresent(int index) {
         for (int i = 0; i < key.length(); i++) {
             if (Objects.equals(key.substring(i, i + 1), alpha.substring(index, index + 1))) {
                 return true;
@@ -151,7 +154,7 @@ class Playfair_Encyrption {
         return cipher;
     }
 
-    int checkSame(String ele1, String ele2) {     //Step 4 & 5:Checking if diagrams are in the 
+    private int checkSame(String ele1, String ele2) {     //Step 4 & 5:Checking if diagrams are in the 
         for (int i1 = 0; i1 < 5; i1++)/* row */ { //same row or col.
             for (int j1 = 0; j1 < 5; j1++)/* col */ {
                 if (Objects.equals(ele1, matrix[i1][j1])) {
@@ -174,20 +177,24 @@ class Playfair_Encyrption {
     }
 }
 class Playfair_Decyrption {
-    int cp_size;
-    String key;
-    String Cipher;
-    String diag;
-    String alpha = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; // excluding J
-    int[] arr_ele1 = new int[2];
-    int[] arr_ele2 = new int[2];
-    ArrayList<String> diagram;
+    private int cp_size;
+    private String key;
+    private String Cipher;
+    private String diag;
+    private String alpha;
+    private int[] arr_ele1;
+    private int[] arr_ele2;
+    private String[][] matrix;
+    private ArrayList<String> diagram;
     Playfair_Decyrption(String Cipher, String key) {
         this.Cipher = Cipher;
         this.key = key.toUpperCase();
         this.cp_size = Cipher.length();
+        alpha = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; // excluding J
+        arr_ele1 = new int[2];
+        arr_ele2 = new int[2];
+        matrix = new String[5][5];
     }
-    String[][] matrix = new String[5][5];
     String[][] Matrix() { // excluding J
         int count = 0;
         int row = 0;
@@ -216,7 +223,7 @@ class Playfair_Decyrption {
         return matrix;
     }
 
-    boolean isPresent(int index) {
+    private boolean isPresent(int index) {
         for (int i = 0; i < key.length(); i++) {
             if (Objects.equals(key.substring(i, i + 1), alpha.substring(index, index + 1))) {
                 return true;
@@ -260,7 +267,7 @@ class Playfair_Decyrption {
         return plain_text;
     }
 
-    int checkSame(String ele1, String ele2) {
+    private int checkSame(String ele1, String ele2) {
         for (int i1 = 0; i1 < 5; i1++) {
             for (int j1 = 0; j1 < 5; j1++) {
                 if (Objects.equals(ele1, matrix[i1][j1])) {

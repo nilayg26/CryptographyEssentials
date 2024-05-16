@@ -1,4 +1,12 @@
 //Author Nilay Gupta
+//Sample I/O:
+/*
+Enter word to encyrpt: 
+HELLO
+Enter Key: 
+10
+Cipher: ROVVY
+Decyrption: HELLO */
 
 package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography;
 import java.util.Objects;

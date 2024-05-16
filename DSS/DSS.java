@@ -1,4 +1,10 @@
-package CRYPTOJAVA;
+//Author Nilay Gupta
+/*The code is just a basic demonstration of DSS.Just run the 
+code and code will automatically generate all
+the essential variables and components.
+Sample output at the end of code.
+*/
+package GITHUB.CryptographyEssentials.DSS;
 import java.util.Random;
 public class DSS {
     public static void main(String [] args){
@@ -138,4 +144,21 @@ public static void verifyingSignature(int y,int hash_code,int q,int p,int r, int
     }
     
 }
+/*
+Sample Output:
+**Key Pair Generation process**
+Private Key x is: 2
+Public key y is: 64
+Pseudo Random Integer k is: 2
+Modulo Inverse of k is: 6
+Hash Value H(M) is:19
+Signature Pair {r,s} is: {9,2}
+
+**Verification of the Signature**
+Variable w is: 6
+Variable u1 is: 4
+Variable u2 is: 10
+Variable v is: 9
+Since v = r
+Hence Verified */
 

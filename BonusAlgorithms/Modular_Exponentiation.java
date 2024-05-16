@@ -1,12 +1,14 @@
-package CRYPTOJAVA;
+////Author Nilay Gupta
+package GITHUB.CryptographyEssentials.BonusAlgorithms;
 public class Modular_Exponentiation {
     static int n=35;
     static int x=6;
-    static int pr=0;
     static int y=13;
+    static int pr=0;
 public static void main(String [] args){
     //to find x^y(mod(n)) 
     //to find (23^20) mod 29
+    //change value of static variables(x,y,n) according to your wish.
     System.out.println(memory_efficient_method(2, 1));
 }
 public static int  memory_efficient_method(int exp,int pr){

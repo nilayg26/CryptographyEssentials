@@ -1,4 +1,14 @@
+//Author Nilay Gupta
+//Sample I/O:
+/*
+Enter Keyword: 
+MONARCHY
+Enter word to encyrpt: 
+BALLOON         //Enter only one word. Sentences not allowed.
+Cipher is: IBSUPMNA
+Plain Text is: BALLOON */
 package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography;
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
@@ -281,9 +291,9 @@ public class Playfair_cipher {
         key= key.toUpperCase();
         System.out.println("Enter word to encyrpt: ");
         String Plain_Text = sc.nextLine();
-        Playfair_Encyrption peC= new Playfair_Encyrption(key, Plain_Text);
+        Playfair_Encyrption peC= new Playfair_Encyrption(Plain_Text,key);
         System.out.println("Cipher is: "+peC.Cipher());
-        Playfair_Decyrption decyrpt= new Playfair_Decyrption(peC.Cipher(), key);
+        Playfair_Decyrption decyrpt= new Playfair_Decyrption (peC.Cipher(),key);
         System.out.println("Plain Text is: "+decyrpt.Plain_Text());
     }
 

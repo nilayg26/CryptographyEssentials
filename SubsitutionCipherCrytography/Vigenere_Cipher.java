@@ -1,3 +1,13 @@
+//Author Nilay Gupta
+/* Sample I/O:
+Enter key
+HI
+Enter Plain Text
+BALLOON
+
+Cipher is: IISTVWU
+Plain Text is: BALLOON
+*/
 package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography;
 import java.util.Objects;
 import java.util.Scanner;

@@ -1,10 +1,19 @@
+//Author Nilay Gupta
+/*Primitive roots are important in various areas of 
+mathematics, including cryptography. They are used in certain 
+encryption algorithms to create secure communication channels.
+For example, 2 is a primitive root of 5 (because 2, 4, 3, and 1 
+can all be obtained as powers of 2 modulo 5). However, 12 is not 
+a prime number, so it does not necessarily have a primitive root 
+(and it doesn't in this case).
+ */
 package GITHUB.CryptographyEssentials.BonusAlgorithms;
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class PrimitiveRoots {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number to know its primitive roots");
         int n = sc.nextInt();
         int count = 0;
 

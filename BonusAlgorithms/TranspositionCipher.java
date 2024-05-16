@@ -1,4 +1,5 @@
-//A simple transpose symmetric encyrption process for medium sized text. 
+////Author Nilay Gupta
+/*A simple transpose symmetric encyrption process for medium sized text. 
 //Since it is a transpose encyrption process it shall be used for words/sentences over 10 characters.
 //the code automatically generates a key that follows following rules:
 //  1)length of key should be with in 9 digits or at max 9 digits.
@@ -12,7 +13,7 @@
 //gaurish is a boy            
 //Sender's Message: gaurish is a boy
 //Cipher message: usr aiyg oias hb
-//Message recieved by reciever: gaurish is a boy
+//Message recieved by reciever: gaurish is a boy*/
 //CODE:
 package GITHUB.CryptographyEssentials.BonusAlgorithms;
 import java.util.ArrayList;

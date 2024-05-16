@@ -1,8 +1,10 @@
+//Author Nilay Gupta
+
 package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class shiftcipher {
+public class ShiftCipher {
     static String alpha = "abcdefghijklmnopqrstuvwxyz";
     static String ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     static String[] arr_alpha = alpha.split("");

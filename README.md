@@ -7,7 +7,7 @@ This repository contains a collection of implementations for various cryptograph
     3)Shift Cipher
 
 ## Asymmetric Key Cryptography
-    1)RSA Cryptosystem https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+    1)RSA Cryptosystem [wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
     2)Elgamal Cryptosystem
 
 ## Digital Signature Standard (DSS)

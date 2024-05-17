@@ -14,6 +14,17 @@
 //Sender's Message: gaurish is a boy
 //Cipher message: usr aiyg oias hb
 //Message recieved by reciever: gaurish is a boy*/
+/*Here's a breakdown of the cipher:
+Key: The key is a random number between 100 and 999,999,999 (inclusive) that follows specific rules:
+No digits can be repeated.
+No leading zero.
+Length between 1 and 9 digits.
+Process:
+The message is divided into blocks based on the length of the key.
+The characters are written into a table according to the key order, filling the table row-wise.
+The ciphertext is created by reading the table column-wise.
+Decryption involves creating a similar table based on the key and filling it with the ciphertext column-wise. The plaintext is then read row-wise.
+This cipher is more secure than a simple monoalphabetic substitution cipher because it uses a key to determine the transposition pattern.*/
 //CODE:
 package GITHUB.CryptographyEssentials.BonusAlgorithms; //remove this line before running the code
 import java.util.ArrayList;

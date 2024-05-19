@@ -13,7 +13,7 @@ This repository contains a collection of implementations for various cryptograph
 ## Digital Signature Standard [DSS](https://en.wikipedia.org/wiki/Digital_Signature_Standard)
 Implementation of DSS for authentication purposes in various protocols.
 
-## Bonus Algorithms [Primitive Roots](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) | [SHA-512](https://en.wikipedia.org/wiki/SHA-2) | [Transposition Cipher](https://en.wikipedia.org/wiki/Transposition_cipher) | [Modular exponentiation](https://en.wikipedia.org/wiki/Modular_exponentiation)
+## Bonus Algorithms [Primitive Roots](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) | [SHA-512](https://en.wikipedia.org/wiki/SHA-2) | [Transposition Cipher](https://en.wikipedia.org/wiki/Transposition_cipher) | [Modular Exponentiation](https://en.wikipedia.org/wiki/Modular_exponentiation) | [Modular Multiplicative Inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse)
     1)Finding Primitive Roots
     2)Modular Exponentiation
     3)Padding of SHA-512

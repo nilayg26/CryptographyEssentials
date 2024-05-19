@@ -12,7 +12,7 @@ package GITHUB.CryptographyEssentials.SubsitutionCipherCrytography; //remove thi
 import java.util.Objects;
 import java.util.Scanner;
 
-public class shiftCipher {
+public class ShiftCipher {
     static String alpha = "abcdefghijklmnopqrstuvwxyz";
     static String ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     static String[] arr_alpha = alpha.split("");

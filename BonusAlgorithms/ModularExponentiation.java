@@ -3,7 +3,7 @@
 /*
  Code Uses three efficient methods to calculate Modular Exponentiation
  1) Memory Efficient method
- 2) Successive Efficient method
+ 2) Successive Squaring method
  3) Fast Modular Exponentiation method
  */
 package GITHUB.CryptographyEssentials.BonusAlgorithms; //remove this line before running the code

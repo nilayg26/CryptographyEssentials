@@ -6,9 +6,9 @@ This repository contains a collection of implementations for various cryptograph
     2)Vigenere Cipher
     3)Shift Cipher
 
-## Asymmetric Key Cryptography [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) | [Elgamal](https://en.wikipedia.org/wiki/ElGamal_encryption)
+## Asymmetric Key Cryptography [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) | [ElGamal](https://en.wikipedia.org/wiki/ElGamal_encryption)
     1)RSA Cryptosystem 
-    2)Elgamal Cryptosystem
+    2)ElGamal Cryptosystem
 
 ## Digital Signature Standard [DSS](https://en.wikipedia.org/wiki/Digital_Signature_Standard)
 Implementation of DSS for authentication purposes in various protocols.

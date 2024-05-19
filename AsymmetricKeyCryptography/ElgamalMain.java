@@ -16,7 +16,7 @@ package GITHUB.CryptographyEssentials.AsymmetricKeyCryptography;  //remove this 
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
-class Elgamal{
+class ElGamal{
     private Random keyGen;
     private int q;
     private int Xa;
@@ -27,7 +27,7 @@ class Elgamal{
     private int c2;
     private int a; 
     private int M;
-    Elgamal(int plain_text){
+    ElGamal(int plain_text){
         this.M=plain_text;
         keyGen=new Random();
         while(true){
@@ -46,7 +46,7 @@ class Elgamal{
         Ya= modPow(a, Xa, q);
         k=2+(Math.abs(keyGen.nextInt())%q);
     }
-    public void getElgamal(){ //displays information about Elgamal
+    public void getElGamal(){ //displays information about Elgamal
         System.out.println("Global prime q= "+q+"\nPublic key Ya= "+Ya+"\nPrivate key Xa= "+Xa+"\nRandom Integer K= "+k);
     }
     public int [] getKeyComponents(){
@@ -129,13 +129,13 @@ class Elgamal{
         }
     }
 }
- public class ElgamalMain {
+ public class ElGamalMain {
         public static void main(String [] args){
             Scanner sc = new Scanner (System.in);
             System.out.println("Enter Plain Text Integer (0<I<100) to be encyrpted: ");
             int n=sc.nextInt();
-            Elgamal e1= new Elgamal(n);
-            e1.getElgamal();
+            ElGamal e1= new ElGamal(n);
+            e1.getElGamal();
             System.out.println("Cipher Text is: "+Arrays.toString(e1.getCipher()));
             System.out.println("Plain Text is: "+e1.getPlainText());
         }

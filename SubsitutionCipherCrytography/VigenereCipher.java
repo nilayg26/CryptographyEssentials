@@ -157,7 +157,7 @@ class Vigenere_Decyrption{
     }
 
 } 
-public class Vigenere_Cipher{
+public class VigenereCipher{
     public static void main(String [] args){
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter key");

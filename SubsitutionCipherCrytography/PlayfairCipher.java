@@ -288,7 +288,7 @@ class Playfair_Decyrption {
         return -1;
     }
 } 
-public class Playfair_cipher {
+public class PlayfairCipher {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

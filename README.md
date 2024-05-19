@@ -1,5 +1,5 @@
 # CryptographyEssentials
-This repository contains a collection of implementations for various cryptographic algorithms in Java Code. The repository is divided into two main sections: Substitution Cipher Cryptography and Asymmetric Public Key Cryptography. Additionally, it includes implementations for the Digital Signature Standard (DSS) and some bonus algorithms.
+This repository contains a collection of implementations for various cryptographic algorithms in Java Code. The repository is divided into two main sections: Substitution Cipher Cryptography and Asymmetric Public Key Cryptography. Additionally, it includes implementations for the Digital Signature Standard (DSS) and various bonus algorithms.
 
 ## Substitution Cipher Cryptography [Playfair Cipher](https://en.wikipedia.org/wiki/Playfair_cipher) | [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigenère_cipher) | [Shift Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
     1)Playfair Cipher 

@@ -13,12 +13,12 @@ This repository contains a collection of implementations for various cryptograph
 ## Digital Signature Standard [DSS](https://en.wikipedia.org/wiki/Digital_Signature_Standard)
 Implementation of DSS for authentication purposes in various protocols.
 
-## Bonus Algorithms [Primitive Roots](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) | [SHA-512](https://en.wikipedia.org/wiki/SHA-2) | [Transposition Cipher](https://en.wikipedia.org/wiki/Transposition_cipher)
+## Bonus Algorithms [Primitive Roots](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) | [SHA-512](https://en.wikipedia.org/wiki/SHA-2) | [Transposition Cipher](https://en.wikipedia.org/wiki/Transposition_cipher) | [Modular exponentiation](https://en.wikipedia.org/wiki/Modular_exponentiation)
     1)Finding Primitive Roots
-    2)Greatest Common Divisor (GCD) using the Euclidean Algorithm
+    2)Modular Exponentiation
     3)Padding of SHA-512
     4)A basic Demonstration of Transposition Cipher Cyrptography.
-
+    5)Finding GCD using Ecludiniean Algorithm
 # Disclaimer
 These algorithms are provided as basic demonstrations and are not intended for real-world cryptographic applications. They are designed for educational and learning purposes only.
 This repository is a comprehensive resource for anyone interested in learning the practical implementation of cryptographic algorithms. 

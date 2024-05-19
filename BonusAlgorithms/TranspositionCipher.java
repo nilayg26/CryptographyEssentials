@@ -1,6 +1,6 @@
 ////Author Nilay Gupta
-/*A simple transpose symmetric encyrption process for medium sized text. 
-//Since it is a transpose encyrption process it shall be used for words/sentences over 10 characters.
+/*A simple transpose symmetric encryption process for medium sized text. 
+//Since it is a transpose encryption process it shall be used for words/sentences over 10 characters.
 //the code automatically generates a key that follows following rules:
 //  1)length of key should be with in 9 digits or at max 9 digits.
 //  2)if the key is of n digits, then all the 1 to n
@@ -44,55 +44,16 @@ public class TranspositionCipher {
         }
         Scanner sc = new Scanner(System.in);
         String key= String.valueOf(key_int);
+        System.out.println("");
         System.out.println("Key is: "+key);
         System.out.println("Enter sentence: ");
         String Plain_Text = sc.nextLine();
-        String cipher = encyrpt(key, Plain_Text);
-        System.out.println();
+        String cipher = encrypt(key, Plain_Text);
         System.out.println("Cipher is: "+cipher);
-        System.out.println();
-        String text= decyrpt(key, cipher);
-        System.out.println();
+        String text= decrypt(key, cipher);
         System.out.println("D(Cipher) is: "+text);
     }
-    public static boolean check(int n){
-        int a=n;
-        int digit=0;
-        while(a!=0){
-            digit++;
-            a=a/10;
-        }
-        a=n;
-        int arr[]=new int[digit];
-        for(int i=0;i<digit;i++){
-            arr[i]= a%10;
-            if(arr[i]==0){
-                return false;
-            }
-            a=a/10;
-        }
-        int [] check_arr= new int [digit];
-        for(int i=0;i<digit;i++){
-            check_arr[i]=i+1;
-        }
-        int count=0;
-        for(int i=0;i<digit;i++){
-            if(arr[digit-1-i]==check_arr[i]){
-                count++;
-            }
-        }
-        if(count>(digit/4)){
-            return false;
-        }
-        Arrays.sort(arr);
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]!=check_arr[i]){
-                return false;
-            }
-        }
-        return true;
-    }
-    public static String encyrpt(String key, String Plain_Text) {
+    public static String encrypt(String key, String Plain_Text) {
         ArrayList<ArrayList<String>> map = new ArrayList<>();
         ArrayList<String> row = new ArrayList<>();
         int l1 = key.length();
@@ -136,8 +97,7 @@ public class TranspositionCipher {
         }
         return cipher;
     }
-
-    public static String decyrpt(String key, String cipher) {
+    public static String decrypt(String key, String cipher) {
         int l1 = key.length();
         int l2 = cipher.length();
         int count = l2 / l1;
@@ -177,7 +137,44 @@ public class TranspositionCipher {
         }
         return Plain_Text;
     }
-    public static Integer indexof(String [] row1st, String val){
+    private static boolean check(int n){
+        int a=n;
+        int digit=0;
+        while(a!=0){
+            digit++;
+            a=a/10;
+        }
+        a=n;
+        int arr[]=new int[digit];
+        for(int i=0;i<digit;i++){
+            arr[i]= a%10;
+            if(arr[i]==0){
+                return false;
+            }
+            a=a/10;
+        }
+        int [] check_arr= new int [digit];
+        for(int i=0;i<digit;i++){
+            check_arr[i]=i+1;
+        }
+        int count=0;
+        for(int i=0;i<digit;i++){
+            if(arr[digit-1-i]==check_arr[i]){
+                count++;
+            }
+        }
+        if(count>(digit/4)){
+            return false;
+        }
+        Arrays.sort(arr);
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]!=check_arr[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+    private static Integer indexof(String [] row1st, String val){
         int index=0;
         for(int i=0; i<row1st.length;i++){
             if(Objects.equals((row1st[i]), val)){

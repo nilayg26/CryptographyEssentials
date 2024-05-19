@@ -47,13 +47,13 @@ class ElGamal{
         k=2+(Math.abs(keyGen.nextInt())%q);
     }
     public void getElGamal(){ //displays information about Elgamal
-        System.out.println("Global prime q= "+q+"\nPublic key Ya= "+Ya+"\nPrivate key Xa= "+Xa+"\nRandom Integer K= "+k);
+        System.out.println("Global prime q= "+q+"\nPrimitive Root a ="+a+"\nPublic key Ya= "+Ya+"\nPrivate key Xa= "+Xa+"\nRandom Integer K= "+k);
     }
     public int [] getKeyComponents(){
         int arr[]={q,a};
         return arr;
     }
-    public int getPrivateKey(){ //return public Key pair {Xa, Ya} //Xa: private key, Ya: public key
+    public int getPrivateKey(){ //Xa: private key, Ya: public key
         return Xa;
     }
     public int getPublicKey(){
@@ -91,7 +91,7 @@ class ElGamal{
             for (int j = 0; j < q - 1; j++) {
                 all[j] = modPow(i, j + 1, q);
             }
-            if (!check(all)) {
+            if (check(all)) {
                 if(i==a){
                     return true;
                 }

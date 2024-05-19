@@ -28,14 +28,14 @@ public static void main(String [] args){
 }
 public static int  memoryEfficientMethod(int i,int val){
    if(i==y+1){
-    return val;
+    return val%n;
    }
    val= (val*x)%n;
    return memoryEfficientMethod(i+1, val);
 }
 public static int  memoryEfficientMethod(int y1,int i,int val){
     if(i==y1+1){
-     return val;
+     return val%n;
     }
     val= (val*x)%n;
     return memoryEfficientMethod(y1,i+1,val);

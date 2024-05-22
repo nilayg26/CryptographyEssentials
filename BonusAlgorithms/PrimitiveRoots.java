@@ -19,17 +19,10 @@ public class PrimitiveRoots {
 
         for (int i = 1; i < n; i++) {
             int[] all = new int[n - 1];
-            boolean isPrimitiveRoot = true;
-
             for (int j = 0; j < n - 1; j++) {
                 all[j] = modPow(i, j + 1, n); 
             }
-
-            if (!check(all)) {
-                isPrimitiveRoot = false;
-            }
-
-            if (isPrimitiveRoot) {
+            if (check(all)) {
                 count++;
                 System.out.println(i + " is a primitive root of " + n);
             }
